@@ -1,0 +1,650 @@
+/* =========================================
+   GENERAL / UNIVERSAL SELECTOR
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+header {
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+h1,
+h2,
+h3 {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   TASK 1 — CSS SELECTORS
+   ========================================= */
+
+#selectors {
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.intro {
+    color: blue;
+    font-size: 18px;
+}
+
+.skills-list {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.website-link {
+    color: #2563eb;
+}
+
+.primary-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+}
+
+.selector-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #2563eb;
+}
+
+.selector-box p {
+    color: green;
+}
+
+.selector-box > p {
+    background-color: #e8f5e9;
+    padding: 10px;
+}
+
+.sibling-example {
+    margin-top: 20px;
+}
+
+.sibling-example + .sibling-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.sibling-button ~ p {
+    color: purple;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    border: 2px solid #2563eb;
+    padding: 10px;
+}
+
+.selector-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+
+/* =========================================
+   TASK 2 — CSS UNITS
+   ========================================= */
+
+#units {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.units-container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.unit-card {
+    border: 2px solid #2563eb;
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+.unit-card h3 {
+    font-size: 3vw;
+}
+
+.unit-description {
+    font-size: 1.2rem;
+}
+
+.responsive-box {
+    width: 70%;
+    height: 30vh;
+    margin: 20px 0;
+    padding: 1em;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+}
+
+.unit-button {
+    padding: 0.8em 1.5em;
+    border: 2px solid #2563eb;
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* =========================================
+   TASK 3 — CSS COLORS
+   ========================================= */
+
+#colors {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.color-grid {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.color-card {
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+/* Color Name */
+.color-name {
+    background-color: lightblue;
+    color: navy;
+}
+
+/* HEX */
+.color-hex {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    border: 3px solid #2563eb;
+}
+
+/* RGB */
+.color-rgb {
+    background-color: rgb(220, 252, 231);
+    color: rgb(22, 101, 52);
+}
+
+/* RGBA */
+.color-rgba {
+    background-color: rgba(245, 158, 11, 0.35);
+    color: rgb(120, 53, 15);
+}
+
+/* HSL */
+.color-hsl {
+    background-color: hsl(200, 80%, 90%);
+    color: hsl(200, 80%, 25%);
+}
+
+/* HSLA */
+.color-hsla {
+    background-color: hsla(280, 70%, 60%, 0.35);
+    color: hsl(280, 70%, 25%);
+}
+
+.color-button {
+    margin: 20px 5%;
+    padding: 12px 25px;
+    background-color: rgb(37, 99, 235);
+    color: white;
+    border: 3px solid #1d4ed8;
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   TASK 4 — TYPOGRAPHY
+   ========================================= */
+
+#typography {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.article {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+.article-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-variant: small-caps;
+    font-stretch: expanded;
+    margin-bottom: 15px;
+}
+
+.article-subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.article-paragraph {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.article-quote {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #2563eb;
+    background-color: #eff6ff;
+}
+
+.article-list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+
+/* =========================================
+   TASK 5 — CSS TEXT PROPERTIES
+   ========================================= */
+
+#text-showcase {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.text-example {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d1d5db;
+}
+
+/* 1. Color */
+.text-color p {
+    color: #2563eb;
+}
+
+/* 2. Text Align */
+.text-align p {
+    text-align: center;
+}
+
+/* 3. Text Align Last */
+.text-align-last p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* 4. Text Decoration */
+.text-decoration p {
+    text-decoration: underline;
+}
+
+/* 5. Text Decoration Line */
+.text-decoration-line p {
+    text-decoration-line: underline;
+}
+
+/* 6. Text Decoration Style */
+.text-decoration-style p {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+/* 7. Text Decoration Color */
+.text-decoration-color p {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+/* 8. Text Decoration Thickness */
+.text-decoration-thickness p {
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+}
+
+/* 9. Text Transform */
+.text-transform p {
+    text-transform: uppercase;
+}
+
+/* 10. Text Indent */
+.text-indent p {
+    text-indent: 40px;
+}
+
+/* 11. Letter Spacing */
+.letter-spacing p {
+    letter-spacing: 4px;
+}
+
+/* 12. Word Spacing */
+.word-spacing p {
+    word-spacing: 15px;
+}
+
+/* 13. Line Height */
+.line-height p {
+    line-height: 2;
+}
+
+/* 14. Text Shadow */
+.text-shadow p {
+    text-shadow: 2px 2px 4px gray;
+}
+
+/* 15. White Space */
+.nowrap-text {
+    white-space: nowrap;
+}
+
+/* 16. Word Break */
+.break-text {
+    word-break: break-all;
+}
+
+/* 17. Overflow Wrap */
+.wrap-text {
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================
+   TASK 6 — CSS IMAGE PROPERTIES
+   ========================================= */
+
+#images {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.image-container {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-card {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+}
+
+/* Image 1 */
+.normal-image {
+    width: 100%;
+    height: 250px;
+    min-width: 150px;
+    max-width: 100%;
+    max-height: 300px;
+    border: 4px solid #2563eb;
+}
+
+/* Image 2 */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    min-width: 150px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    opacity: 0.9;
+    border: 4px solid #2563eb;
+    box-shadow: 0 4px 10px gray;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Image 3 */
+.object-image {
+    width: 100%;
+    height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #2563eb;
+    border-radius: 8px;
+}
+
+/* Object-fit experiment */
+.object-fit-experiment {
+    width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.fit-box {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.fit-box img {
+    width: 100%;
+    height: 200px;
+    border: 3px solid #2563eb;
+}
+
+/* Contain */
+.fit-contain {
+    object-fit: contain;
+}
+
+/* Cover */
+.fit-cover {
+    object-fit: cover;
+}
+
+/* Fill */
+.fit-fill {
+    object-fit: fill;
+}
+
+
+/* =========================================
+   TASK 7 — PERSONAL PROFILE CARD
+   ========================================= */
+
+#profile-section {
+    width: 90%;
+    min-height: 80vh;
+    margin: 40px auto;
+    padding: 2em;
+    background-color: hsl(210, 40%, 96%);
+}
+
+.profile-card {
+    width: 70%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 3px solid #2563eb;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.profile-card-image {
+    width: 180px;
+    height: 180px;
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid rgb(37, 99, 235);
+    border-radius: 50%;
+    opacity: 0.95;
+    box-shadow: 0 5px 15px gray;
+}
+
+.profile-content {
+    flex: 1;
+}
+
+.profile-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: #1e3a8a;
+}
+
+.profile-profession {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(37, 99, 235);
+}
+
+.profile-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 1em;
+    word-spacing: 4px;
+    color: #374151;
+}
+
+.profile-skills {
+    padding-left: 1.5em;
+    line-height: 1.8;
+}
+
+.social-links a {
+    color: hsl(220, 80%, 45%);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #2563eb;
+    text-decoration-thickness: 2px;
+    margin-right: 1em;
+}
+
+.profile-card > .profile-card-image {
+    object-fit: cover;
+}
+
+.contact-button {
+    margin-top: 1.5em;
+    padding: 0.8em 1.5em;
+    background-color: rgba(37, 99, 235, 0.9);
+    color: white;
+    border: 2px solid #1d4ed8;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TASK 8 — EXPERIMENT & OBSERVATION
+   ========================================= */
+
+#experiments {
+    width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.experiment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.experiment-table th,
+.experiment-table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+
+.experiment-table th {
+    background-color: #2563eb;
+    color: white;
+}
+
+.experiment-table tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fit-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .profile-description {
+        text-align: left;
+    }
+}
